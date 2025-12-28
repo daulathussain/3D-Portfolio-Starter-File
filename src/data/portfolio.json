@@ -1,0 +1,286 @@
+{
+  "site": {
+    "title": "Bruno Portfolio Clone",
+    "description": "An interactive 3D portfolio experience - drive around to explore",
+    "author": "Your Name",
+    "email": "your.email@example.com",
+    "socialLinks": {
+      "github": "https://github.com/yourusername",
+      "twitter": "https://twitter.com/yourusername",
+      "linkedin": "https://linkedin.com/in/yourusername"
+    }
+  },
+  "intro": {
+    "heading": "Welcome to My Portfolio",
+    "subheading": "Drive around to explore my work",
+    "instructions": "WASD/Arrows to move • SPACE to jump • Explore the city"
+  },
+  "sections": [
+    {
+      "id": "about",
+      "title": "About Me",
+      "position": [-20, 0, 20],
+      "buildingType": "medium",
+      "color": "#2196f3",
+      "content": "I'm a full-stack developer passionate about creating interactive web experiences. With expertise in React, Three.js, and modern web technologies, I build innovative solutions that push the boundaries of what's possible on the web.",
+      "icon": "👨‍💻"
+    },
+    {
+      "id": "projects",
+      "title": "Projects",
+      "position": [20, 0, 20],
+      "buildingType": "tall",
+      "color": "#9c27b0",
+      "items": [
+        {
+          "name": "3D Portfolio",
+          "description": "Interactive portfolio website with Three.js and React",
+          "tech": ["React", "Three.js", "Next.js", "TypeScript"],
+          "link": "https://github.com/example/3d-portfolio"
+        },
+        {
+          "name": "E-commerce Platform",
+          "description": "Full-stack e-commerce solution with payment integration",
+          "tech": ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+          "link": "https://github.com/example/ecommerce"
+        },
+        {
+          "name": "Task Manager",
+          "description": "Collaborative task management application",
+          "tech": ["React", "Node.js", "MongoDB", "Socket.io"],
+          "link": "https://github.com/example/task-manager"
+        },
+        {
+          "name": "Weather App",
+          "description": "Real-time weather application with beautiful UI",
+          "tech": ["React", "OpenWeather API", "Chart.js"],
+          "link": "https://github.com/example/weather-app"
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "title": "Skills",
+      "position": [20, 0, -20],
+      "buildingType": "medium",
+      "color": "#4caf50",
+      "items": [
+        {
+          "category": "Frontend",
+          "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Three.js", "Redux"]
+        },
+        {
+          "category": "Backend",
+          "technologies": ["Node.js", "Express", "PostgreSQL", "MongoDB", "GraphQL", "REST APIs"]
+        },
+        {
+          "category": "DevOps",
+          "technologies": ["Docker", "Git", "GitHub Actions", "Vercel", "AWS", "Nginx"]
+        },
+        {
+          "category": "Tools",
+          "technologies": ["VS Code", "Figma", "Postman", "Jest", "Webpack", "Vite"]
+        }
+      ]
+    },
+    {
+      "id": "experience",
+      "title": "Experience",
+      "position": [-20, 0, -20],
+      "buildingType": "medium",
+      "color": "#ff9800",
+      "items": [
+        {
+          "role": "Senior Frontend Developer",
+          "company": "Tech Company",
+          "period": "2022 - Present",
+          "description": "Leading frontend development for major web applications, mentoring junior developers, and implementing best practices."
+        },
+        {
+          "role": "Full Stack Developer",
+          "company": "Startup Inc",
+          "period": "2020 - 2022",
+          "description": "Developed full-stack applications using React and Node.js, worked closely with designers and product managers."
+        },
+        {
+          "role": "Junior Developer",
+          "company": "Web Agency",
+          "period": "2019 - 2020",
+          "description": "Built responsive websites and web applications for various clients using modern web technologies."
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "Contact",
+      "position": [0, 0, -30],
+      "buildingType": "small",
+      "color": "#f44336",
+      "content": "Let's work together on your next project! I'm always open to discussing new opportunities and collaborations.",
+      "cta": "Get in Touch",
+      "email": "hello@example.com",
+      "social": {
+        "github": "https://github.com/yourusername",
+        "linkedin": "https://linkedin.com/in/yourusername",
+        "twitter": "https://twitter.com/yourusername"
+      }
+    }
+  ],
+  "achievements": [
+    {
+      "id": "explorer",
+      "title": "Explorer",
+      "description": "Visit all sections",
+      "unlockCondition": "visitAllSections",
+      "icon": "🗺️"
+    },
+    {
+      "id": "speed_demon",
+      "title": "Speed Demon",
+      "description": "Reach maximum speed",
+      "unlockCondition": "maxSpeed",
+      "icon": "⚡"
+    },
+    {
+      "id": "high_jumper",
+      "title": "High Jumper",
+      "description": "Jump 5 times in a row",
+      "unlockCondition": "consecutiveJumps",
+      "threshold": 5,
+      "icon": "🦘"
+    },
+    {
+      "id": "time_traveler",
+      "title": "Time Traveler",
+      "description": "Spend 5 minutes exploring",
+      "unlockCondition": "timeSpent",
+      "threshold": 300,
+      "icon": "⏰"
+    }
+  ],
+  "world": {
+    "ground": {
+      "size": 100
+    },
+    "lighting": {
+      "ambient": {
+        "color": "#ffffff",
+        "intensity": 0.5
+      },
+      "directional": {
+        "color": "#ffffff",
+        "intensity": 1,
+        "position": [20, 30, 15]
+      }
+    },
+    "buildings": [
+      {"position": [-30, 0, 30], "width": 5, "height": 10, "depth": 5, "color": "#607d8b"},
+      {"position": [30, 0, 30], "width": 4, "height": 8, "depth": 4, "color": "#607d8b"},
+      {"position": [-30, 0, -35], "width": 6, "height": 12, "depth": 6, "color": "#607d8b"},
+      {"position": [30, 0, -35], "width": 5, "height": 9, "depth": 5, "color": "#607d8b"},
+      {"position": [-35, 0, 0], "width": 4, "height": 7, "depth": 5, "color": "#607d8b"},
+      {"position": [35, 0, 0], "width": 4, "height": 8, "depth": 5, "color": "#607d8b"}
+    ],
+    "cityDecorations": {
+      "trees": [
+        [-10, 0, 8],
+        [10, 0, 8],
+        [-10, 0, -8],
+        [10, 0, -8],
+        [-8, 0, 15],
+        [8, 0, 15]
+      ],
+      "streetLights": [
+        [-6, 0, 5], [6, 0, 5], [-6, 0, -5], [6, 0, -5],
+        [5, 0, 6], [5, 0, -6], [-5, 0, 6], [-5, 0, -6]
+      ],
+      "benches": [
+        {
+          "position": [-3, 0, 10],
+          "rotation": 0
+        },
+        {
+          "position": [3, 0, 10],
+          "rotation": 0
+        }
+      ],
+      "trashCans": [
+        [-7, 0, 12],
+        [7, 0, 12]
+      ],
+      "fireHydrants": [
+        [-4, 0, 7],
+        [4, 0, -7]
+      ],
+      "parkingSigns": [
+        [15, 0, 15]
+      ]
+    }
+  },
+  "vehicle": {
+    "model": "simple_car",
+    "startPosition": [0, 1, 0],
+    "physics": {
+      "mass": 100,
+      "acceleration": 8,
+      "maxSpeed": 12,
+      "rotationSpeed": 0.03,
+      "jumpForce": 5,
+      "brakeForce": 4
+    },
+    "colors": {
+      "body": "#3b82f6",
+      "wheels": "#1f2937"
+    }
+  },
+  "controls": {
+    "keyboard": {
+      "forward": ["ArrowUp", "KeyW"],
+      "backward": ["ArrowDown", "KeyS"],
+      "left": ["ArrowLeft", "KeyA"],
+      "right": ["ArrowRight", "KeyD"],
+      "jump": ["Space"],
+      "brake": ["ShiftLeft", "ShiftRight"]
+    },
+    "mobile": {
+      "enabled": true,
+      "joystickPosition": "left"
+    },
+    "gamepad": {
+      "enabled": true
+    }
+  },
+  "audio": {
+    "backgroundMusic": {
+      "src": "/assets/audio/background.mp3",
+      "volume": 0.3,
+      "loop": true
+    },
+    "effects": {
+      "engine": {
+        "src": "/assets/audio/engine.mp3",
+        "volume": 0.4,
+        "loop": true
+      },
+      "jump": {
+        "src": "/assets/audio/jump.mp3",
+        "volume": 0.5
+      },
+      "achievement": {
+        "src": "/assets/audio/achievement.mp3",
+        "volume": 0.6
+      }
+    }
+  },
+  "ui": {
+    "showFPS": false,
+    "showMinimap": true,
+    "theme": {
+      "primary": "#3b82f6",
+      "secondary": "#8b5cf6",
+      "accent": "#10b981",
+      "background": "rgba(15, 23, 42, 0.9)",
+      "text": "#ffffff"
+    }
+  }
+}
